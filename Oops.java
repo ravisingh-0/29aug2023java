@@ -1,31 +1,57 @@
+import java.util.*;
+
 public class Oops{
     public static void main(String args[]){
 
-    s1.name = "Rohan Vasan";
-    s1.roll = 123;
-    s1.marks[0] = 100;
-    s1.marks[1] = 70;
-    s1.marks[2] =80;
+    // s1.name = "Rohan Vasan";
+    // s1.roll = 123;
+    // s1.marks[0] = 100;
+    // s1.marks[1] = 70;
+    // s1.marks[2] =80;
 
 
-    Student s2 = new Student(s1);
+    // Student s2 = new Student(s1);
 
-    System.out.println("Name = "+ s1.name);
-    System.out.println("Roll No = "+ s1.roll);
+    // System.out.println("Name = "+ s1.name);
+    // System.out.println("Roll No = "+ s1.roll);
 
-    System.out.println(" S2 name = "+ s2.name);
-    System.out.println(" S2 roll = "+s2.roll);
+    // System.out.println(" S2 name = "+ s2.name);
+    // System.out.println(" S2 roll = "+s2.roll);
 
-    s1.marks[2] = 30;
+    // s1.marks[2] = 30;
 
-    for(int i=0; i<3; i++){
-        System.out.println("marks " + i + " = "+ s2.marks[i]);
-    }
+    // for(int i=0; i<3; i++){
+    //     System.out.println("marks " + i + " = "+ s2.marks[i]);
+    // }
+
+    Pen p1 = new Pen();
+    p1.setcolor("yellow");
+    System.out.println(p1.getcolor());
+
+    p1.settip(5);
+    System.out.println(p1.gettip());
 
     }
 }
 
+class Pen{
+    private String color;
+    int tip;
 
+    String getcolor(){
+        return this.color;
+    }
+   
+    int gettip(){
+        return this.tip;
+    }
+    void setcolor(String color){
+        this.color = color;
+    }
+    void settip(int tip){
+        this.tip = tip;
+    }
+}
 
 
 
